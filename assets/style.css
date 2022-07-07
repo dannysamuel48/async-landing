@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #003049;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    margin: 0.5rem;
+}
+.menu li a {
+    font-weight: 700;
+    text-decoration: none;
+}
+.content {
+    width: 100%;
+    text-align: center;
+}
+.img-center {
+    max-width: 38rem;
+    margin: 0 auto 30px;
+}
+.img-center img {
+    width: 100%;
+}
+.routes-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: left;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.routes-images img {
+    width: 100%;
+    max-width: 26rem;
+    height: 10rem;
+}
+.footer {
+    position: fixed;
+    height: 4rem;
+    padding: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    animation: movi 12s infinite;
+}
+.footer p {
+    font-weight: 800;
+    margin: 5% auto 20px;
+}
+#logoImg {
+    width: 10rem;
+    height: 8rem;
+}
+canvas{
+    height: 10rem;
+    width: 26rem;
+    overflow: hidden;
+    background: #005;
+}
+
+.spinner {
+    color: yellow;
+    font-weight: bold;
+    border: 12px solid rgb(0, 0, 0);
+    border-top-color: yellow;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    -webkit-animation: spin 5s linear infinite;
+    -o-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+    background-color: black;
+    -webkit-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+    z-index: 10000;
+    position: relative;
+}
+
+@keyframes spin {
+    from { transform: rotate(-1turn); }
+    to { transfor: rotate(360deg);}
+}
+
+@keyframes movi {
+    from { transform: translate(1px); }
+    to { transform: translate(1020px);}
+}
